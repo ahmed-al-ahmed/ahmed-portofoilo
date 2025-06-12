@@ -1,11 +1,12 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Building, Calendar, ChevronRight } from "lucide-react";
+import { Building, Calendar, ChevronRight, MapPin } from "lucide-react";
 
 interface Role {
   position: string;
   duration: string;
+  location: string;
   description: string;
   technologies: string[];
 }
@@ -18,17 +19,32 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    company: "Freelance Software Engineer",
+    company: "Baanx Group Ltd",
     roles: [
       {
         position: "Software Engineer",
         duration: "2023 - Present",
+        location: "UK/London - Remotely",
+        description: "Working on fintech solutions and blockchain technologies.",
+        technologies: ["Blockchain", "Node.js", "TypeScript", "AWS", "Docker"]
+      }
+    ],
+    type: "development"
+  },
+  {
+    company: "Freelance Software Engineer",
+    roles: [
+      {
+        position: "Application Security Engineer",
+        duration: "2023 - Present",
+        location: "Remotely",
         description: "Application Security Engineer focusing on OWASP TOP 10, networking, AWS, and penetration testing.",
         technologies: ["OWASP TOP 10", "Networking", "AWS", "Penetration Testing"]
       },
       {
         position: "Software Developer",
         duration: "2021 - 2023",
+        location: "Remotely",
         description: "Backend development using modern technologies and microservices architecture.",
         technologies: ["Node.js", "Laravel", "Docker", "PostgreSQL", "Microservices", "AWS"]
       }
@@ -41,7 +57,8 @@ const experiences: ExperienceItem[] = [
       {
         position: "Software Engineer | Back-end Developer",
         duration: "2020 - 2021",
-        description: "Backend development using PHP Laravel framework with cloud technologies and databases. Based in Malaysia - Remotely.",
+        location: "Malaysia - Remotely",
+        description: "Backend development using PHP Laravel framework with cloud technologies and databases.",
         technologies: ["PHP 7.4", "Laravel", "MySQL", "AWS", "Docker", "MongoDB", "Firebase"]
       }
     ],
@@ -53,7 +70,8 @@ const experiences: ExperienceItem[] = [
       {
         position: "Software Engineer | Full Stack Developer",
         duration: "2016 - 2020",
-        description: "Full-stack development using PHP Laravel framework with mobile and web technologies. Based in Syria - Remotely.",
+        location: "Syria - Remotely",
+        description: "Full-stack development using PHP Laravel framework with mobile and web technologies.",
         technologies: ["PHP 5/7.x", "Laravel", "Firebase", "Android/Java", "MySQL", "WebSocket", "Linux", "Server Hosting", "CPanel"]
       }
     ],
@@ -65,7 +83,8 @@ const experiences: ExperienceItem[] = [
       {
         position: "Software Engineer",
         duration: "2016 - 2020",
-        description: "Freelance development building various applications and websites using desktop and web technologies. Based in Syria - Remotely.",
+        location: "Syria - Remotely",
+        description: "Freelance development building various applications and websites using desktop and web technologies.",
         technologies: ["Java Swing GUI", "PHP 5.x", "CSS", "JavaScript", "jQuery", "HTML", "Bootstrap"]
       }
     ],
@@ -118,6 +137,10 @@ const WorkExperience = () => {
                               <Calendar className="w-4 h-4" />
                               <span className="font-medium">{role.duration}</span>
                             </div>
+                          </div>
+                          <div className="flex items-center gap-2 text-muted-foreground mb-3">
+                            <MapPin className="w-4 h-4" />
+                            <span className="text-sm">{role.location}</span>
                           </div>
                           <p className="text-muted-foreground mb-4">{role.description}</p>
                           <div className="flex flex-wrap gap-2">
