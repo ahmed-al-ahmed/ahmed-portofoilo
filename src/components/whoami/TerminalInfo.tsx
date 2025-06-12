@@ -19,7 +19,7 @@ const TerminalInfo = () => {
           <CardHeader>
             <CardTitle className="flex items-center gap-3 font-mono">
               <Terminal className="w-6 h-6 text-primary" />
-              /usr/bin/ahmed --info
+              sudo /usr/bin/ahmed --info
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-6 font-mono">
