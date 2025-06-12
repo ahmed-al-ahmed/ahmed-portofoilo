@@ -2,7 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Award, Calendar, ExternalLink, Clock } from "lucide-react";
+import { Award, Calendar, ExternalLink, Clock, GraduationCap } from "lucide-react";
 
 const practicalAchievements = [
   {
@@ -44,6 +44,60 @@ const practicalAchievements = [
     date: "2021-2023",
     description: "Achieved 2nd place in Capture The Flag competitions focusing on web security, cryptography, and reverse engineering challenges.",
     skills: ["CTF", "Cryptography", "Reverse Engineering", "Web Exploitation", "Binary Exploitation"]
+  },
+  {
+    title: "Advanced NodeJS",
+    issuer: "LinkedIn Learning",
+    date: "April 2022",
+    description: "Advanced Node.js concepts including performance optimization, clustering, and enterprise-level application development.",
+    skills: ["Node.js", "Performance Optimization", "Clustering", "Enterprise Development"],
+    type: "learning",
+    certificateUrl: "https://www.linkedin.com/learning/certificates/98c707d111adb725b809fcdfc0b27746dab28e58413e3163da80d6acc8e7678e"
+  },
+  {
+    title: "Advanced Node.js: Scaling Applications",
+    issuer: "LinkedIn Learning",
+    date: "April 2022",
+    description: "Deep dive into scaling Node.js applications for high-traffic environments and enterprise use cases.",
+    skills: ["Node.js", "Application Scaling", "Load Balancing", "High Traffic"],
+    type: "learning",
+    certificateUrl: "https://www.linkedin.com/learning/certificates/2cfc630dbc713332f6f57d7bd04c29f88587d2bdc2d6d432f43ec9a72e7f5639"
+  },
+  {
+    title: "DevOps with AWS",
+    issuer: "LinkedIn Learning",
+    date: "April 2022",
+    description: "Comprehensive DevOps practices using AWS cloud services including CI/CD pipelines and infrastructure automation.",
+    skills: ["AWS", "DevOps", "CI/CD", "Infrastructure Automation", "Cloud Services"],
+    type: "learning",
+    certificateUrl: "https://www.linkedin.com/learning/certificates/fe06296b495599bde21924c60fdc72488241beb6091d3905f917d883838ad29b"
+  },
+  {
+    title: "Learning Jenkins",
+    issuer: "LinkedIn Learning",
+    date: "April 2022",
+    description: "Mastering Jenkins for continuous integration and continuous deployment in modern software development workflows.",
+    skills: ["Jenkins", "CI/CD", "Automation", "Build Pipelines", "DevOps"],
+    type: "learning",
+    certificateUrl: "https://www.linkedin.com/learning/certificates/5b83c9a097c251589fbf57154efb83cae9076a4678c3aafa8f91c69c3ad3d070"
+  },
+  {
+    title: "Secure Coding",
+    issuer: "Kyte Learning",
+    date: "April 2022",
+    description: "Comprehensive secure coding practices and vulnerability prevention techniques for software development.",
+    skills: ["Secure Coding", "Vulnerability Prevention", "Code Security", "Best Practices"],
+    type: "learning",
+    certificateUrl: "https://drive.google.com/file/d/1szNwmtRBK1q6agyLuv0yEdirOlQwv7S3/view"
+  },
+  {
+    title: "Secure Coding in Java",
+    issuer: "LinkedIn Learning",
+    date: "April 2022",
+    description: "Java-specific secure coding practices including common vulnerabilities and mitigation strategies.",
+    skills: ["Java", "Secure Coding", "Vulnerability Mitigation", "Application Security"],
+    type: "learning",
+    certificateUrl: "https://www.linkedin.com/learning/certificates/6c71c99ac31cf6ed80e9d4127388f6fa413add92d1036b2950d6d77c2bafb429"
   }
 ];
 
@@ -51,12 +105,14 @@ export const PracticalAchievements = () => {
   return (
     <div className="grid md:grid-cols-2 gap-8">
       {practicalAchievements.map((achievement, index) => (
-        <Card key={index} className={`${achievement.isPending ? 'border-muted/50 opacity-80' : 'border-destructive/20 hover:border-destructive/40'} transition-colors`}>
+        <Card key={index} className={`${achievement.isPending ? 'border-muted/50 opacity-80' : achievement.type === 'learning' ? 'border-blue-200 hover:border-blue-400' : 'border-destructive/20 hover:border-destructive/40'} transition-colors`}>
           <CardHeader>
             <div className="flex items-start gap-4">
-              <div className={`p-3 rounded-lg ${achievement.isPending ? 'bg-muted/20' : 'bg-destructive/10'}`}>
+              <div className={`p-3 rounded-lg ${achievement.isPending ? 'bg-muted/20' : achievement.type === 'learning' ? 'bg-blue-50' : 'bg-destructive/10'}`}>
                 {achievement.isPending ? (
                   <Clock className="w-6 h-6 text-muted-foreground" />
+                ) : achievement.type === 'learning' ? (
+                  <GraduationCap className="w-6 h-6 text-blue-600" />
                 ) : (
                   <Award className="w-6 h-6 text-destructive" />
                 )}
@@ -104,12 +160,12 @@ export const PracticalAchievements = () => {
             </p>
             <div className="flex flex-wrap gap-1">
               {achievement.skills.slice(0, 8).map((skill, skillIndex) => (
-                <Badge key={skillIndex} variant="outline" className={`text-xs ${achievement.isPending ? 'border-muted/50 text-muted-foreground' : 'border-destructive/50'}`}>
+                <Badge key={skillIndex} variant="outline" className={`text-xs ${achievement.isPending ? 'border-muted/50 text-muted-foreground' : achievement.type === 'learning' ? 'border-blue-300' : 'border-destructive/50'}`}>
                   {skill}
                 </Badge>
               ))}
               {achievement.skills.length > 8 && (
-                <Badge variant="outline" className={`text-xs ${achievement.isPending ? 'border-muted/50 text-muted-foreground' : 'border-destructive/50'}`}>
+                <Badge variant="outline" className={`text-xs ${achievement.isPending ? 'border-muted/50 text-muted-foreground' : achievement.type === 'learning' ? 'border-blue-300' : 'border-destructive/50'}`}>
                   +{achievement.skills.length - 8} more
                 </Badge>
               )}
