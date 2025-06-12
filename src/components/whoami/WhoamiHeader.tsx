@@ -10,14 +10,14 @@ const WhoamiHeader = () => {
         <div className="text-center space-y-6 animate-fade-in">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary border border-primary/20">
             <Terminal className="w-4 h-4" />
-            <span className="text-sm font-medium font-mono">$ whoami</span>
+            <span className="text-sm font-medium">$ whoami</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-white via-primary to-accent bg-clip-text text-transparent font-mono">
+          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-white via-primary to-accent bg-clip-text text-transparent">
             Ahmed Al Ahmed
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-mono">
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
             Backend Engineer | Penetration Tester | Security Researcher
           </p>
           
