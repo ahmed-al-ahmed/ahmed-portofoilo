@@ -18,73 +18,55 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    company: "TechCorp Solutions",
+    company: "Freelance Software Engineer",
     roles: [
       {
-        position: "Senior Backend Engineer & Security Lead",
+        position: "Software Engineer",
         duration: "2023 - Present",
-        description: "Leading backend development teams and conducting security assessments for enterprise applications.",
-        technologies: ["PHP/Laravel", "Node.js", "AWS", "Docker", "PostgreSQL"]
+        description: "Application Security Engineer focusing on OWASP TOP 10, networking, AWS, and penetration testing.",
+        technologies: ["OWASP TOP 10", "Networking", "AWS", "Penetration Testing"]
       },
       {
-        position: "Backend Engineer",
-        duration: "2022 - 2023",
-        description: "Developed scalable backend services and implemented security best practices.",
-        technologies: ["PHP/Laravel", "MySQL", "AWS", "Docker"]
-      }
-    ],
-    type: "development"
-  },
-  {
-    company: "SecureIT Consulting",
-    roles: [
-      {
-        position: "Senior Penetration Tester",
-        duration: "2021 - 2022",
-        description: "Led comprehensive security assessments and vulnerability testing for enterprise clients.",
-        technologies: ["Burp Suite", "Metasploit", "Nmap", "OWASP", "Kali Linux"]
-      },
-      {
-        position: "Junior Penetration Tester",
-        duration: "2021 - 2021",
-        description: "Performed web application security testing and network assessments.",
-        technologies: ["Burp Suite", "Nmap", "OWASP", "Kali Linux"]
+        position: "Software Developer",
+        duration: "2021 - 2023",
+        description: "Backend development using modern technologies and microservices architecture.",
+        technologies: ["Node.js", "Laravel", "Docker", "PostgreSQL", "Microservices", "AWS"]
       }
     ],
     type: "security"
   },
   {
-    company: "DevFlow Inc",
+    company: "Deemples",
     roles: [
       {
-        position: "Full Stack Developer",
-        duration: "2019 - 2021",
-        description: "Developed and maintained scalable web applications using modern technologies.",
-        technologies: ["NestJS", "MongoDB", "React", "Docker", "GitLab CI"]
+        position: "Software Engineer | Back-end Developer",
+        duration: "2020 - 2021",
+        description: "Backend development using PHP Laravel framework with cloud technologies and databases. Based in Malaysia - Remotely.",
+        technologies: ["PHP 7.4", "Laravel", "MySQL", "AWS", "Docker", "MongoDB", "Firebase"]
       }
     ],
     type: "development"
   },
   {
-    company: "StartupHub",
+    company: "SCIT Company",
     roles: [
       {
-        position: "Backend Developer",
-        duration: "2017 - 2019",
-        description: "Built RESTful APIs and database architectures for growing startup ecosystem.",
-        technologies: ["PHP/Laravel", "MySQL", "Redis", "AWS EC2", "Git"]
+        position: "Software Engineer | Full Stack Developer",
+        duration: "2016 - 2020",
+        description: "Full-stack development using PHP Laravel framework with mobile and web technologies. Based in Syria - Remotely.",
+        technologies: ["PHP 5/7.x", "Laravel", "Firebase", "Android/Java", "MySQL", "WebSocket", "Linux", "Server Hosting", "CPanel"]
       }
     ],
     type: "development"
   },
   {
-    company: "WebSolutions Ltd",
+    company: "Freelance Software Engineer",
     roles: [
       {
-        position: "Junior Developer",
-        duration: "2016 - 2017",
-        description: "Started career developing web applications and learning security best practices.",
-        technologies: ["PHP", "JavaScript", "MySQL", "HTML/CSS", "Git"]
+        position: "Software Engineer",
+        duration: "2016 - 2020",
+        description: "Freelance development building various applications and websites using desktop and web technologies. Based in Syria - Remotely.",
+        technologies: ["Java Swing GUI", "PHP 5.x", "CSS", "JavaScript", "jQuery", "HTML", "Bootstrap"]
       }
     ],
     type: "development"
