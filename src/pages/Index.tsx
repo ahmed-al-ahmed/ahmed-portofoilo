@@ -14,7 +14,8 @@ import {
   Cloud,
   Lock,
   Target,
-  Zap
+  Zap,
+  User
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import TypingEffect from "@/components/TypingEffect";
@@ -56,6 +57,12 @@ const Index = () => {
                   View Achievements
                 </Button>
               </Link>
+              <Link to="/whoami">
+                <Button variant="outline" size="lg" className="border-accent/20 hover:bg-accent/10">
+                  <User className="w-4 h-4 mr-2" />
+                  whoami
+                </Button>
+              </Link>
               <Button variant="outline" size="lg" className="border-primary/20 hover:bg-primary/10">
                 <Github className="w-4 h-4 mr-2" />
                 View Projects
@@ -93,9 +100,9 @@ const Index = () => {
                     <span className="font-medium">Backend Technologies</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary">PHP/Laravel</Badge>
-                    <Badge variant="secondary">Node.js</Badge>
-                    <Badge variant="secondary">NestJS</Badge>
+                    <Badge variant="outline" className="border-primary/50">PHP/Laravel</Badge>
+                    <Badge variant="outline" className="border-primary/50">Node.js</Badge>
+                    <Badge variant="outline" className="border-primary/50">NestJS</Badge>
                   </div>
                 </div>
                 
@@ -105,9 +112,9 @@ const Index = () => {
                     <span className="font-medium">Databases</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary">MySQL</Badge>
-                    <Badge variant="secondary">MongoDB</Badge>
-                    <Badge variant="secondary">PostgreSQL</Badge>
+                    <Badge variant="outline" className="border-primary/50">MySQL</Badge>
+                    <Badge variant="outline" className="border-primary/50">MongoDB</Badge>
+                    <Badge variant="outline" className="border-primary/50">PostgreSQL</Badge>
                   </div>
                 </div>
                 
@@ -117,11 +124,11 @@ const Index = () => {
                     <span className="font-medium">DevOps & Cloud</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary">AWS</Badge>
-                    <Badge variant="secondary">Docker</Badge>
-                    <Badge variant="secondary">Git/GitHub</Badge>
-                    <Badge variant="secondary">GitLab</Badge>
-                    <Badge variant="secondary">BitBucket</Badge>
+                    <Badge variant="outline" className="border-primary/50">AWS</Badge>
+                    <Badge variant="outline" className="border-primary/50">Docker</Badge>
+                    <Badge variant="outline" className="border-primary/50">Git/GitHub</Badge>
+                    <Badge variant="outline" className="border-primary/50">GitLab</Badge>
+                    <Badge variant="outline" className="border-primary/50">BitBucket</Badge>
                   </div>
                 </div>
               </CardContent>
@@ -144,8 +151,8 @@ const Index = () => {
                     <span className="font-medium">Certifications</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="destructive">CBBH</Badge>
-                    <Badge variant="destructive">CPTS</Badge>
+                    <Badge variant="outline" className="border-destructive/50">CBBH</Badge>
+                    <Badge variant="outline" className="border-destructive/50">CPTS</Badge>
                     <Badge variant="outline" className="border-destructive/50">HackTheBox</Badge>
                   </div>
                 </div>

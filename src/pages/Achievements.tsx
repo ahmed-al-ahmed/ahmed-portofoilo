@@ -170,7 +170,7 @@ const Achievements = () => {
                       <p className="text-muted-foreground mb-4">{achievement.description}</p>
                       <div className="flex flex-wrap gap-2">
                         {achievement.skills.map((skill, skillIndex) => (
-                          <Badge key={skillIndex} variant="destructive" className="text-xs">
+                          <Badge key={skillIndex} variant="outline" className="text-xs border-destructive/50">
                             {skill}
                           </Badge>
                         ))}
@@ -213,7 +213,7 @@ const Achievements = () => {
                     <div className="grid md:grid-cols-2 gap-4">
                       {platform.achievements.map((achievement, achIndex) => (
                         <div key={achIndex} className="flex items-start gap-3 p-4 bg-card/50 rounded-lg border border-muted">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="w-5 h-5 text-destructive mt-0.5 flex-shrink-0" />
                           <div className="flex-1">
                             <div className="flex items-center gap-2 mb-1">
                               <h4 className="font-medium">{achievement.name}</h4>

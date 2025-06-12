@@ -142,8 +142,12 @@ const WorkExperience = () => {
                             {role.technologies.map((tech, techIndex) => (
                               <Badge 
                                 key={techIndex} 
-                                variant={exp.type === 'security' ? 'destructive' : 'secondary'}
-                                className="text-xs"
+                                variant="outline"
+                                className={`text-xs ${
+                                  exp.type === 'security' 
+                                    ? 'border-destructive/50' 
+                                    : 'border-primary/50'
+                                }`}
                               >
                                 {tech}
                               </Badge>
