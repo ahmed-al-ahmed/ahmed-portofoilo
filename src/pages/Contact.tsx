@@ -6,9 +6,9 @@ import {
   Mail, 
   Github, 
   Linkedin, 
-  MapPin, 
-  Phone,
-  ArrowLeft
+  MapPin,
+  ArrowLeft,
+  Twitter
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -54,15 +54,7 @@ const Contact = () => {
                     <Mail className="w-5 h-5 text-primary" />
                     <div>
                       <p className="font-medium">Email</p>
-                      <p className="text-muted-foreground">your.email@example.com</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-3">
-                    <Phone className="w-5 h-5 text-primary" />
-                    <div>
-                      <p className="font-medium">Phone</p>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                      <p className="text-muted-foreground">eng.ahmed.d.alahmed@gmail.com</p>
                     </div>
                   </div>
                   
@@ -70,7 +62,7 @@ const Contact = () => {
                     <MapPin className="w-5 h-5 text-primary" />
                     <div>
                       <p className="font-medium">Location</p>
-                      <p className="text-muted-foreground">Available for Remote Work</p>
+                      <p className="text-muted-foreground">UAE and available to work remotely</p>
                     </div>
                   </div>
                 </div>
@@ -78,14 +70,24 @@ const Contact = () => {
                 <div className="pt-4 border-t border-border">
                   <p className="font-medium mb-3">Connect with me:</p>
                   <div className="flex gap-3">
-                    <Button variant="outline" size="sm" className="border-primary/20 hover:bg-primary/10">
-                      <Github className="w-4 h-4 mr-2" />
-                      GitHub
-                    </Button>
-                    <Button variant="outline" size="sm" className="border-primary/20 hover:bg-primary/10">
-                      <Linkedin className="w-4 h-4 mr-2" />
-                      LinkedIn
-                    </Button>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline" size="sm" className="border-primary/20 hover:bg-primary/10">
+                        <Github className="w-4 h-4 mr-2" />
+                        GitHub
+                      </Button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/engahmedalahmed/" target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline" size="sm" className="border-primary/20 hover:bg-primary/10">
+                        <Linkedin className="w-4 h-4 mr-2" />
+                        LinkedIn
+                      </Button>
+                    </a>
+                    <a href="https://x.com/ahmed_d_alahmed" target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline" size="sm" className="border-primary/20 hover:bg-primary/10">
+                        <Twitter className="w-4 h-4 mr-2" />
+                        X
+                      </Button>
+                    </a>
                   </div>
                 </div>
               </CardContent>
@@ -142,10 +144,12 @@ const Contact = () => {
             Whether you need robust backend development or comprehensive security testing, I'm here to help.
           </p>
           
-          <Button size="lg" className="bg-primary hover:bg-primary/90">
-            <Mail className="w-4 h-4 mr-2" />
-            Send Message
-          </Button>
+          <a href="mailto:eng.ahmed.d.alahmed@gmail.com">
+            <Button size="lg" className="bg-primary hover:bg-primary/90">
+              <Mail className="w-4 h-4 mr-2" />
+              Send Message
+            </Button>
+          </a>
         </div>
       </section>
     </div>

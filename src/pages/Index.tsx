@@ -15,7 +15,8 @@ import {
   Lock,
   Target,
   Zap,
-  User
+  User,
+  Twitter
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import TypingEffect from "@/components/TypingEffect";
@@ -211,7 +212,7 @@ const Index = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-destructive/10 rounded-full mb-4">
                   <Shield className="w-8 h-8 text-destructive" />
                 </div>
-                <h3 className="text-2xl font-bold mb-2">2</h3>
+                <h3 className="text-2xl font-bold mb-2">3</h3>
                 <p className="text-muted-foreground">Security Certifications</p>
               </CardContent>
             </Card>
@@ -250,12 +251,21 @@ const Index = () => {
           </div>
           
           <div className="flex justify-center gap-6">
-            <Button variant="ghost" size="lg" className="hover:bg-primary/10">
-              <Github className="w-5 h-5" />
-            </Button>
-            <Button variant="ghost" size="lg" className="hover:bg-primary/10">
-              <Linkedin className="w-5 h-5" />
-            </Button>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="lg" className="hover:bg-primary/10">
+                <Github className="w-5 h-5" />
+              </Button>
+            </a>
+            <a href="https://www.linkedin.com/in/engahmedalahmed/" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="lg" className="hover:bg-primary/10">
+                <Linkedin className="w-5 h-5" />
+              </Button>
+            </a>
+            <a href="https://x.com/ahmed_d_alahmed" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="lg" className="hover:bg-primary/10">
+                <Twitter className="w-5 h-5" />
+              </Button>
+            </a>
           </div>
         </div>
       </section>
