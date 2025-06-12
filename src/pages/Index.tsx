@@ -231,7 +231,7 @@ const Index = () => {
       </section>
 
       {/* Work Experience Section */}
-      <WorkExperience />
+      {/* <WorkExperience /> */}
 
       {/* Contact Section */}
       <section className="py-20 px-6 bg-muted/30">
@@ -251,7 +251,7 @@ const Index = () => {
           </div>
           
           <div className="flex justify-center gap-6">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/ahmed-al-ahmed" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="lg" className="hover:bg-primary/10">
                 <Github className="w-5 h-5" />
               </Button>
