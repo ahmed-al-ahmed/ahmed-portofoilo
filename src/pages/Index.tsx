@@ -100,9 +100,9 @@ const Index = () => {
                     <span className="font-medium">Backend Technologies</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="outline" className="border-primary/50">PHP/Laravel</Badge>
-                    <Badge variant="outline" className="border-primary/50">Node.js</Badge>
-                    <Badge variant="outline" className="border-primary/50">NestJS</Badge>
+                    <Badge variant="secondary" className="text-xs">PHP/Laravel</Badge>
+                    <Badge variant="secondary" className="text-xs">Node.js</Badge>
+                    <Badge variant="secondary" className="text-xs">NestJS</Badge>
                   </div>
                 </div>
                 
@@ -112,9 +112,9 @@ const Index = () => {
                     <span className="font-medium">Databases</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="outline" className="border-primary/50">MySQL</Badge>
-                    <Badge variant="outline" className="border-primary/50">MongoDB</Badge>
-                    <Badge variant="outline" className="border-primary/50">PostgreSQL</Badge>
+                    <Badge variant="secondary" className="text-xs">MySQL</Badge>
+                    <Badge variant="secondary" className="text-xs">MongoDB</Badge>
+                    <Badge variant="secondary" className="text-xs">PostgreSQL</Badge>
                   </div>
                 </div>
                 
@@ -124,11 +124,11 @@ const Index = () => {
                     <span className="font-medium">DevOps & Cloud</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="outline" className="border-primary/50">AWS</Badge>
-                    <Badge variant="outline" className="border-primary/50">Docker</Badge>
-                    <Badge variant="outline" className="border-primary/50">Git/GitHub</Badge>
-                    <Badge variant="outline" className="border-primary/50">GitLab</Badge>
-                    <Badge variant="outline" className="border-primary/50">BitBucket</Badge>
+                    <Badge variant="secondary" className="text-xs">AWS</Badge>
+                    <Badge variant="secondary" className="text-xs">Docker</Badge>
+                    <Badge variant="secondary" className="text-xs">Git/GitHub</Badge>
+                    <Badge variant="secondary" className="text-xs">GitLab</Badge>
+                    <Badge variant="secondary" className="text-xs">BitBucket</Badge>
                   </div>
                 </div>
               </CardContent>
@@ -151,9 +151,9 @@ const Index = () => {
                     <span className="font-medium">Certifications</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="outline" className="border-destructive/50">CBBH</Badge>
-                    <Badge variant="outline" className="border-destructive/50">CPTS</Badge>
-                    <Badge variant="outline" className="border-destructive/50">HackTheBox</Badge>
+                    <Badge variant="secondary" className="text-xs">CBBH</Badge>
+                    <Badge variant="secondary" className="text-xs">CPTS</Badge>
+                    <Badge variant="secondary" className="text-xs">HackTheBox</Badge>
                   </div>
                 </div>
                 
@@ -163,8 +163,8 @@ const Index = () => {
                     <span className="font-medium">Platforms</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="outline" className="border-destructive/50">PortSwigger Academy</Badge>
-                    <Badge variant="outline" className="border-destructive/50">CTF Competitions</Badge>
+                    <Badge variant="secondary" className="text-xs">PortSwigger Academy</Badge>
+                    <Badge variant="secondary" className="text-xs">CTF Competitions</Badge>
                   </div>
                 </div>
                 
@@ -174,9 +174,9 @@ const Index = () => {
                     <span className="font-medium">Specializations</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="outline" className="border-destructive/50">Web App Security</Badge>
-                    <Badge variant="outline" className="border-destructive/50">Network Pentesting</Badge>
-                    <Badge variant="outline" className="border-destructive/50">Vulnerability Assessment</Badge>
+                    <Badge variant="secondary" className="text-xs">Web App Security</Badge>
+                    <Badge variant="secondary" className="text-xs">Network Pentesting</Badge>
+                    <Badge variant="secondary" className="text-xs">Vulnerability Assessment</Badge>
                   </div>
                 </div>
               </CardContent>
