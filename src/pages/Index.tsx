@@ -1,12 +1,238 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { 
+  Code2, 
+  Shield, 
+  Award, 
+  Mail, 
+  Github, 
+  Linkedin, 
+  Server, 
+  Database, 
+  Cloud,
+  Lock,
+  Target,
+  Zap
+} from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background text-foreground">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden py-20 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center space-y-6 animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary border border-primary/20">
+              <Shield className="w-4 h-4" />
+              <span className="text-sm font-medium">Security • Development • Innovation</span>
+            </div>
+            
+            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-white via-primary to-accent bg-clip-text text-transparent">
+              Senior Backend Engineer
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+              Penetration Testing Expert with 8+ Years of Software Development Experience
+            </p>
+            
+            <div className="flex flex-wrap justify-center gap-4 pt-6">
+              <Button size="lg" className="bg-primary hover:bg-primary/90">
+                <Mail className="w-4 h-4 mr-2" />
+                Get In Touch
+              </Button>
+              <Button variant="outline" size="lg" className="border-primary/20 hover:bg-primary/10">
+                <Github className="w-4 h-4 mr-2" />
+                View Projects
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section className="py-20 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Technical Expertise</h2>
+            <p className="text-xl text-muted-foreground">
+              Full-stack development and cybersecurity skills
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Development Skills */}
+            <Card className="border-primary/20 bg-card/50 backdrop-blur hover:bg-card/70 transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <div className="p-2 bg-primary/10 rounded-lg">
+                    <Code2 className="w-6 h-6 text-primary" />
+                  </div>
+                  Software Development
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <Server className="w-4 h-4 text-primary" />
+                    <span className="font-medium">Backend Technologies</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="secondary">PHP/Laravel</Badge>
+                    <Badge variant="secondary">Node.js</Badge>
+                    <Badge variant="secondary">NestJS</Badge>
+                  </div>
+                </div>
+                
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <Database className="w-4 h-4 text-primary" />
+                    <span className="font-medium">Databases</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="secondary">MySQL</Badge>
+                    <Badge variant="secondary">MongoDB</Badge>
+                    <Badge variant="secondary">PostgreSQL</Badge>
+                  </div>
+                </div>
+                
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <Cloud className="w-4 h-4 text-primary" />
+                    <span className="font-medium">DevOps & Cloud</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="secondary">AWS</Badge>
+                    <Badge variant="secondary">Docker</Badge>
+                    <Badge variant="secondary">Git/GitHub</Badge>
+                    <Badge variant="secondary">GitLab</Badge>
+                    <Badge variant="secondary">BitBucket</Badge>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Security Skills */}
+            <Card className="border-destructive/20 bg-card/50 backdrop-blur hover:bg-card/70 transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <div className="p-2 bg-destructive/10 rounded-lg">
+                    <Shield className="w-6 h-6 text-destructive" />
+                  </div>
+                  Cybersecurity & Penetration Testing
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <Award className="w-4 h-4 text-destructive" />
+                    <span className="font-medium">Certifications</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="destructive">CBBH</Badge>
+                    <Badge variant="destructive">CPTS</Badge>
+                    <Badge variant="outline" className="border-destructive/50">HackTheBox</Badge>
+                  </div>
+                </div>
+                
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <Target className="w-4 h-4 text-destructive" />
+                    <span className="font-medium">Platforms</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline" className="border-destructive/50">PortSwigger Academy</Badge>
+                    <Badge variant="outline" className="border-destructive/50">CTF Competitions</Badge>
+                  </div>
+                </div>
+                
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <Lock className="w-4 h-4 text-destructive" />
+                    <span className="font-medium">Specializations</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="outline" className="border-destructive/50">Web App Security</Badge>
+                    <Badge variant="outline" className="border-destructive/50">Network Pentesting</Badge>
+                    <Badge variant="outline" className="border-destructive/50">Vulnerability Assessment</Badge>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section className="py-20 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Experience Highlights</h2>
+            <p className="text-xl text-muted-foreground">
+              8+ years of software development and cybersecurity expertise
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="text-center border-primary/20 hover:border-primary/40 transition-colors">
+              <CardContent className="pt-8">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
+                  <Zap className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold mb-2">8+</h3>
+                <p className="text-muted-foreground">Years of Development Experience</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center border-destructive/20 hover:border-destructive/40 transition-colors">
+              <CardContent className="pt-8">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-destructive/10 rounded-full mb-4">
+                  <Shield className="w-8 h-8 text-destructive" />
+                </div>
+                <h3 className="text-2xl font-bold mb-2">2</h3>
+                <p className="text-muted-foreground">Security Certifications</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center border-accent/20 hover:border-accent/40 transition-colors">
+              <CardContent className="pt-8">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/10 rounded-full mb-4">
+                  <Target className="w-8 h-8 text-accent-foreground" />
+                </div>
+                <h3 className="text-2xl font-bold mb-2">CTF</h3>
+                <p className="text-muted-foreground">Capture The Flag Competitor</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-20 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-4xl font-bold mb-4">Let's Connect</h2>
+          <p className="text-xl text-muted-foreground mb-8">
+            Ready to discuss your next project or security assessment?
+          </p>
+          
+          <div className="flex justify-center gap-4 mb-8">
+            <Button size="lg" className="bg-primary hover:bg-primary/90">
+              <Mail className="w-4 h-4 mr-2" />
+              Contact Me
+            </Button>
+          </div>
+          
+          <div className="flex justify-center gap-6">
+            <Button variant="ghost" size="lg" className="hover:bg-primary/10">
+              <Github className="w-5 h-5" />
+            </Button>
+            <Button variant="ghost" size="lg" className="hover:bg-primary/10">
+              <Linkedin className="w-5 h-5" />
+            </Button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
