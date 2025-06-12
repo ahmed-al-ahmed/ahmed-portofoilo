@@ -50,6 +50,12 @@ const Index = () => {
                   Get In Touch
                 </Button>
               </Link>
+              <Link to="/achievements">
+                <Button variant="outline" size="lg" className="border-destructive/20 hover:bg-destructive/10">
+                  <Award className="w-4 h-4 mr-2" />
+                  View Achievements
+                </Button>
+              </Link>
               <Button variant="outline" size="lg" className="border-primary/20 hover:bg-primary/10">
                 <Github className="w-4 h-4 mr-2" />
                 View Projects
