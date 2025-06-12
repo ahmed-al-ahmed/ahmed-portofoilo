@@ -92,12 +92,13 @@ const platformAchievements = [
 ];
 
 const getDifficultyColor = (difficulty: string) => {
-  switch (difficulty.toLowerCase()) {
-    case 'expert': return 'destructive';
-    case 'hard': return 'default';
-    case 'medium': return 'secondary';
-    default: return 'outline';
-  }
+  return 'secondary';
+  // switch (difficulty.toLowerCase()) {
+    // case 'expert': return 'destructive';
+    // case 'hard': return 'default';
+    // case 'medium': return 'secondary';
+    // default: return 'outline';
+  // }
 };
 
 const Achievements = () => {
