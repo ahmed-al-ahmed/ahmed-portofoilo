@@ -16,6 +16,9 @@ import {
   Target,
   Zap
 } from "lucide-react";
+import { Link } from "react-router-dom";
+import TypingEffect from "@/components/TypingEffect";
+import WorkExperience from "@/components/WorkExperience";
 
 const Index = () => {
   return (
@@ -33,15 +36,20 @@ const Index = () => {
               Senior Backend Engineer
             </h1>
             
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-              Penetration Testing Expert with 8+ Years of Software Development Experience
-            </p>
+            <div className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto min-h-[2rem]">
+              <TypingEffect 
+                text="Penetration Testing Expert with 8+ Years of Software Development Experience"
+                speed={50}
+              />
+            </div>
             
             <div className="flex flex-wrap justify-center gap-4 pt-6">
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
-                <Mail className="w-4 h-4 mr-2" />
-                Get In Touch
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" className="bg-primary hover:bg-primary/90">
+                  <Mail className="w-4 h-4 mr-2" />
+                  Get In Touch
+                </Button>
+              </Link>
               <Button variant="outline" size="lg" className="border-primary/20 hover:bg-primary/10">
                 <Github className="w-4 h-4 mr-2" />
                 View Projects
@@ -208,6 +216,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Work Experience Section */}
+      <WorkExperience />
+
       {/* Contact Section */}
       <section className="py-20 px-6 bg-muted/30">
         <div className="container mx-auto max-w-4xl text-center">
@@ -217,10 +228,12 @@ const Index = () => {
           </p>
           
           <div className="flex justify-center gap-4 mb-8">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              <Mail className="w-4 h-4 mr-2" />
-              Contact Me
-            </Button>
+            <Link to="/contact">
+              <Button size="lg" className="bg-primary hover:bg-primary/90">
+                <Mail className="w-4 h-4 mr-2" />
+                Contact Me
+              </Button>
+            </Link>
           </div>
           
           <div className="flex justify-center gap-6">
