@@ -40,7 +40,7 @@ const Index = () => {
             
             <div className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto min-h-[2rem]">
               <TypingEffect 
-                text="Penetration Testing Expert with 8+ Years of Software Development Experience"
+                text="Penetration Tester with 8+ Years of Software Development Experience"
                 speed={50}
               />
             </div>
