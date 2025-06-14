@@ -1,6 +1,7 @@
+
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Terminal, Code, MapPin, Mail, Calendar, User, Shield } from "lucide-react";
+import { Terminal, Code, MapPin, Mail, Calendar, User, Shield, Server, Wrench } from "lucide-react";
 const TerminalInfo = () => {
   return <section className="py-8 xs:py-12 sm:py-20 px-1 xs:px-2 sm:px-6 bg-muted/30">
       <div className="container mx-auto max-w-lg xs:max-w-xl sm:max-w-4xl">
@@ -47,7 +48,7 @@ const TerminalInfo = () => {
                 <span className="text-primary">$</span>
                 <span className="text-muted-foreground">cat /proc/skills</span>
               </div>
-              <div className="pl-3 xs:pl-6 space-y-3  xs:space-y-4 bg-muted/50 p-3 xs:p-4 rounded-lg border border-muted">
+              <div className="pl-3 xs:pl-6 space-y-3 xs:space-y-4 bg-muted/50 p-3 xs:p-4 rounded-lg border border-muted">
                 <div>
                   <div className="flex items-center gap-2 mb-1 xs:mb-2">
                     <Code className="w-4 h-4 text-accent" />
@@ -55,16 +56,18 @@ const TerminalInfo = () => {
                   </div>
                   <div className="flex flex-wrap gap-2 ml-3 xs:ml-6">
                     <Badge variant="outline" className="border-primary/50 font-mono">PHP/Laravel</Badge>
+                    <Badge variant="outline" className="border-primary/50 font-mono">JS/TS</Badge>
                     <Badge variant="outline" className="border-primary/50 font-mono">Node.js</Badge>
                     <Badge variant="outline" className="border-primary/50 font-mono">NestJS</Badge>
                     <Badge variant="outline" className="border-primary/50 font-mono">MySQL</Badge>
+                    <Badge variant="outline" className="border-primary/50 font-mono">Postgres</Badge>
                     <Badge variant="outline" className="border-primary/50 font-mono">MongoDB</Badge>
                   </div>
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-1 xs:mb-2">
                     <Shield className="w-4 h-4 text-destructive" />
-                    <span className="text-destructive">security_tools:</span>
+                    <span className="text-destructive">security_skills:</span>
                   </div>
                   <div className="flex flex-wrap gap-2 ml-3 xs:ml-6">
                     <Badge variant="outline" className="border-destructive/50 font-mono">Burp Suite</Badge>
@@ -72,12 +75,24 @@ const TerminalInfo = () => {
                     <Badge variant="outline" className="border-destructive/50 font-mono">Nmap</Badge>
                     <Badge variant="outline" className="border-destructive/50 font-mono">Kali Linux</Badge>
                     <Badge variant="outline" className="border-destructive/50 font-mono">OWASP</Badge>
+                    <Badge variant="outline" className="border-destructive/50 font-mono">Web security</Badge>
+                    <Badge variant="outline" className="border-destructive/50 font-mono">OWASP TOP 10</Badge>
+                    <Badge variant="outline" className="border-destructive/50 font-mono">Networking security</Badge>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex items-center gap-2 mb-1 xs:mb-2">
+                    <Server className="w-4 h-4 text-primary" />
+                    <span className="text-primary">devops_skills:</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2 ml-3 xs:ml-6">
+                    <Badge variant="outline" className="border-primary/50 font-mono">CI/CD</Badge>
+                    <Badge variant="outline" className="border-primary/50 font-mono">Docker</Badge>
+                    <Badge variant="outline" className="border-primary/50 font-mono">AWS</Badge>
                   </div>
                 </div>
               </div>
             </div>
-            {/* Certifications */}
-            
             {/* Experience */}
             <div className="space-y-2 xs:space-y-4">
               <div className="flex items-center gap-2 xs:gap-3 text-xs xs:text-sm">
