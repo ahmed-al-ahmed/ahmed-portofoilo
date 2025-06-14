@@ -12,7 +12,7 @@ const WhoamiFooter = () => {
             <span className="text-primary">ahmed@security:~$</span> exit
           </div>
           <p className="text-base xs:text-xl text-muted-foreground font-mono">
-            Connection to ahmed.dev closed.
+            Connection to ahmed-al-ahmed.com closed.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 xs:gap-4">
             <Link to="/contact">

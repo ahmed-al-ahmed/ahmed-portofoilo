@@ -8,7 +8,7 @@ const practicalAchievements = [
   {
     title: "Certified Bug Bounty Hunter (CBBH)",
     issuer: "HackTheBox",
-    date: "2023",
+    date: "2024",
     description: "Comprehensive certification covering web application security testing and bug bounty methodologies with hands-on practical experience.",
     skills: [
       "Attacking APIs", "Attacking CMS", "Attacking Web Services", "Authentication & Authorization Attacks",
@@ -160,12 +160,12 @@ export const PracticalAchievements = () => {
             </p>
             <div className="flex flex-wrap gap-1">
               {achievement.skills.slice(0, 8).map((skill, skillIndex) => (
-                <Badge key={skillIndex} variant="outline" className={`text-xs ${achievement.isPending ? 'border-muted/50 text-muted-foreground' : achievement.type === 'learning' ? 'border-blue-300' : 'border-destructive/50'}`}>
+                <Badge key={skillIndex} variant="secondary" className={`text-xs ${achievement.isPending ? 'border-muted/50 text-muted-foreground' : achievement.type === 'learning' ? 'border-blue-300' : ''}`}>
                   {skill}
                 </Badge>
               ))}
               {achievement.skills.length > 8 && (
-                <Badge variant="outline" className={`text-xs ${achievement.isPending ? 'border-muted/50 text-muted-foreground' : achievement.type === 'learning' ? 'border-blue-300' : 'border-destructive/50'}`}>
+                <Badge variant="secondary" className={`text-xs ${achievement.isPending ? 'border-muted/50 text-muted-foreground' : achievement.type === 'learning' ? 'border-blue-300' : ''}`}>
                   +{achievement.skills.length - 8} more
                 </Badge>
               )}

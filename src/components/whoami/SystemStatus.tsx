@@ -35,10 +35,10 @@ const SystemStatus = () => {
               <p className="text-muted-foreground font-mono text-sm xs:text-base">Security Focused</p>
             </CardContent>
           </Card>
-          <Card className="text-center border-accent/20 hover:border-accent/40 transition-colors">
+          <Card className="text-center border-destructive/20 hover:border-destructive/40 transition-colors">
             <CardContent className="pt-7 xs:pt-8">
-              <div className="inline-flex items-center justify-center w-12 h-12 xs:w-16 xs:h-16 bg-accent/10 rounded-full mb-3 xs:mb-4">
-                <Zap className="w-6 h-6 xs:w-8 xs:h-8 text-accent-foreground" />
+              <div className="inline-flex items-center justify-center w-12 h-12 xs:w-16 xs:h-16 bg-destructive/10 rounded-full mb-3 xs:mb-4">
+                <Zap className="w-6 h-6 xs:w-8 xs:h-8 text-destructive" />
               </div>
               <h3 className="text-lg xs:text-2xl font-bold mb-1 xs:mb-2 font-mono">24/7</h3>
               <p className="text-muted-foreground font-mono text-sm xs:text-base">Available</p>

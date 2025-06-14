@@ -27,7 +27,9 @@ const TerminalInfo = () => {
                 <div className="flex items-center gap-2 xs:gap-3">
                   <Calendar className="w-4 h-4 text-primary" />
                   <span className="text-accent">age:</span>
-                  <span>30</span>
+                  <span>
+                    {new Date().getFullYear() - 1995}
+                  </span>
                 </div>
                 <div className="flex items-center gap-2 xs:gap-3">
                   <Mail className="w-4 h-4 text-primary" />
@@ -55,23 +57,27 @@ const TerminalInfo = () => {
                   </div>
                   <div className="flex flex-wrap gap-2 ml-3 xs:ml-6">
                     <Badge variant="outline" className="border-primary/50 font-mono">PHP/Laravel</Badge>
-                    <Badge variant="outline" className="border-primary/50 font-mono">Node.js</Badge>
-                    <Badge variant="outline" className="border-primary/50 font-mono">NestJS</Badge>
+                    <Badge variant="outline" className="border-primary/50 font-mono">JavaScript/Node.js</Badge>
+                    <Badge variant="outline" className="border-primary/50 font-mono">TypeScript/NestJS</Badge>
                     <Badge variant="outline" className="border-primary/50 font-mono">MySQL</Badge>
+                    <Badge variant="outline" className="border-primary/50 font-mono">PostgreSQL</Badge>
+                    <Badge variant="outline" className="border-primary/50 font-mono">Redis</Badge>
                     <Badge variant="outline" className="border-primary/50 font-mono">MongoDB</Badge>
+                    <Badge variant="outline" className="border-primary/50 font-mono">Docker</Badge>
+                    <Badge variant="outline" className="border-primary/50 font-mono">AWS</Badge>
+                    <Badge variant="outline" className="border-primary/50 font-mono">Linux</Badge>
+                    <Badge variant="outline" className="border-primary/50 font-mono">CI/CD</Badge>
+                    <Badge variant="outline" className="border-primary/50 font-mono">GitHub/Bitbucket Actions</Badge>
                   </div>
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-1 xs:mb-2">
                     <Shield className="w-4 h-4 text-destructive" />
-                    <span className="text-destructive">security_tools:</span>
+                    <span className="text-destructive">security_skills:</span>
                   </div>
                   <div className="flex flex-wrap gap-2 ml-3 xs:ml-6">
-                    <Badge variant="outline" className="border-destructive/50 font-mono">Burp Suite</Badge>
-                    <Badge variant="outline" className="border-destructive/50 font-mono">Metasploit</Badge>
-                    <Badge variant="outline" className="border-destructive/50 font-mono">Nmap</Badge>
-                    
-                    <Badge variant="outline" className="border-destructive/50 font-mono">Metasplot</Badge>
+                    <Badge variant="outline" className="border-destructive/50 font-mono">Web Application Security</Badge>
+                    <Badge variant="outline" className="border-destructive/50 font-mono">Network Security</Badge>
                   </div>
                 </div>
               </div>
@@ -86,14 +92,16 @@ const TerminalInfo = () => {
               </div>
               <div className="pl-3 xs:pl-6 bg-muted/50 p-3 xs:p-4 rounded-lg border border-muted">
                 <span className="text-accent">Experience uptime:</span>{" "}
-                8+ years in software development
+                <br />
+                8+ years in software development <br />
+                4+ years in penetration testing
               </div>
             </div>
             {/* Footer Prompt */}
             <div className="pt-3 xs:pt-6 border-t border-muted">
               <div className="text-xs xs:text-sm text-muted-foreground">
                 <span className="text-primary">root@ahmed:~#</span>{" "}
-                Ready to secure your digital world
+                Ready to build and secure your digital world
               </div>
             </div>
           </CardContent>

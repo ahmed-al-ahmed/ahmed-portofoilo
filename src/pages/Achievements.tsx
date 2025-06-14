@@ -50,24 +50,24 @@ const Achievements = () => {
       <section className="py-20 px-6 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <Tabs defaultValue="practical" className="w-full">
-            <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-16">
-              <TabsTrigger value="practical" className="flex items-center gap-2">
+            {/* <TabsList className="grid w-full max-w-md mx-auto grid-cols-1 mb-16"> */}
+              {/* <TabsTrigger value="practical" className="flex items-center gap-1">
                 <Trophy className="w-4 h-4" />
-                Practical Achievements
-              </TabsTrigger>
-              <TabsTrigger value="platforms" className="flex items-center gap-2">
+                Practical
+              </TabsTrigger> */}
+              {/* <TabsTrigger value="platforms" className="flex items-center gap-2">
                 <Target className="w-4 h-4" />
-                Platform Achievements
-              </TabsTrigger>
-            </TabsList>
+                Platform
+              </TabsTrigger> */}
+            {/* </TabsList> */}
 
             <TabsContent value="practical" className="space-y-8">
               <PracticalAchievements />
             </TabsContent>
 
-            <TabsContent value="platforms" className="space-y-12">
+            {/* <TabsContent value="platforms" className="space-y-12">
               <PlatformAchievements />
-            </TabsContent>
+            </TabsContent> */}
           </Tabs>
         </div>
       </section>

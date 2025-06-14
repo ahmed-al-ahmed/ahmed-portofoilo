@@ -70,7 +70,7 @@ const Contact = () => {
                 <div className="pt-4 border-t border-border">
                   <p className="font-medium mb-3">Connect with me:</p>
                   <div className="flex gap-3">
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/ahmed-al-ahmed" target="_blank" rel="noopener noreferrer">
                       <Button variant="outline" size="sm" className="border-primary/20 hover:bg-primary/10">
                         <Github className="w-4 h-4 mr-2" />
                         GitHub
@@ -116,18 +116,18 @@ const Contact = () => {
                 <div className="space-y-3">
                   <h4 className="font-medium">Security Services</h4>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="destructive">Penetration Testing</Badge>
-                    <Badge variant="destructive">Security Audits</Badge>
-                    <Badge variant="destructive">Vulnerability Assessment</Badge>
+                    <Badge variant="secondary">Penetration Testing</Badge>
+                    <Badge variant="secondary">Security Audits</Badge>
+                    <Badge variant="secondary">Vulnerability Assessment</Badge>
                   </div>
                 </div>
                 
                 <div className="space-y-3">
                   <h4 className="font-medium">DevOps & Cloud</h4>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="outline">AWS Solutions</Badge>
-                    <Badge variant="outline">Docker Deployment</Badge>
-                    <Badge variant="outline">CI/CD Setup</Badge>
+                    <Badge variant="secondary">AWS Solutions</Badge>
+                    <Badge variant="secondary">Docker Deployment</Badge>
+                    <Badge variant="secondary">CI/CD Setup</Badge>
                   </div>
                 </div>
               </CardContent>

@@ -20,34 +20,6 @@ const platformAchievements = [
       challenges: 28,
       rank: "Pro Hacker"
     }
-  },
-  {
-    platform: "PortSwigger Web Security Academy",
-    achievements: [
-      { name: "SQL Injection", description: "All SQL injection labs completed", difficulty: "Expert" },
-      { name: "Cross-Site Scripting", description: "XSS vulnerability expert", difficulty: "Expert" },
-      { name: "Authentication", description: "Authentication bypass specialist", difficulty: "Hard" },
-      { name: "Access Control", description: "Privilege escalation master", difficulty: "Hard" }
-    ],
-    stats: {
-      labsCompleted: 156,
-      certificates: 8,
-      rank: "Practitioner"
-    }
-  },
-  {
-    platform: "TryHackMe",
-    achievements: [
-      { name: "OWASP Top 10", description: "Mastered all OWASP vulnerabilities", difficulty: "Medium" },
-      { name: "Network Security", description: "Advanced network security techniques", difficulty: "Hard" },
-      { name: "Privilege Escalation", description: "Linux & Windows privesc expert", difficulty: "Hard" },
-      { name: "Cryptography", description: "Cryptographic attack methods", difficulty: "Medium" }
-    ],
-    stats: {
-      roomsCompleted: 89,
-      streak: 45,
-      rank: "Top 5%"
-    }
   }
 ];
 

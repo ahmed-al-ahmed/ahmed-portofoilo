@@ -64,10 +64,6 @@ const Index = () => {
                   whoami
                 </Button>
               </Link>
-              <Button variant="outline" size="lg" className="border-primary/20 hover:bg-primary/10">
-                <Github className="w-4 h-4 mr-2" />
-                View Projects
-              </Button>
             </div>
           </div>
         </div>
@@ -211,7 +207,7 @@ const Index = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-destructive/10 rounded-full mb-4">
                   <Shield className="w-8 h-8 text-destructive" />
                 </div>
-                <h3 className="text-2xl font-bold mb-2">3</h3>
+                <h3 className="text-2xl font-bold mb-2">2</h3>
                 <p className="text-muted-foreground">Security Certifications</p>
               </CardContent>
             </Card>
@@ -219,7 +215,7 @@ const Index = () => {
             <Card className="text-center border-destructive/20 hover:border-destructive/40 transition-colors">
               <CardContent className="pt-8">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-destructive/10 rounded-full mb-4">
-                  <Award className="w-8 h-8 text-accent-foreground" />
+                  <Award className="w-8 h-8 text-destructive" />
                 </div>
                 <h3 className="text-2xl font-bold mb-2">CTF</h3>
                 <p className="text-muted-foreground">Capture The Flag Competitor</p>

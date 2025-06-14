@@ -22,7 +22,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/whoami" element={<Whoami />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<Index />} />
         </Routes>
       </Router>
     </TooltipProvider>
