@@ -153,7 +153,6 @@ const Index = () => {
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary" className="text-xs">CBBH</Badge>
-                    <Badge variant="secondary" className="text-xs">CPTS</Badge>
                     <Badge variant="secondary" className="text-xs">HackTheBox</Badge>
                   </div>
                 </div>
