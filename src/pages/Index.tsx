@@ -219,8 +219,8 @@ const Index = () => {
             
             <Card className="text-center border-accent/20 hover:border-accent/40 transition-colors">
               <CardContent className="pt-8">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-destructive/10 rounded-full mb-4">
-                  <Target className="w-8 h-8 text-accent-foreground" />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/10 rounded-full mb-4">
+                  <Award className="w-8 h-8 text-accent-foreground" />
                 </div>
                 <h3 className="text-2xl font-bold mb-2">CTF</h3>
                 <p className="text-muted-foreground">Capture The Flag Competitor</p>
