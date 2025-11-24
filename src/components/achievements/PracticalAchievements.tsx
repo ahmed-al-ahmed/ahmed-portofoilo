@@ -12,7 +12,7 @@ const practicalAchievements = [
     description: "Comprehensive certification covering web application security testing and bug bounty methodologies with hands-on practical experience.",
     skills: [
       "Attacking APIs", "Attacking CMS", "Attacking Web Services", "Authentication & Authorization Attacks",
-      "Blind Server-Side Request Forgery", "Blind SQL Injection", "Bug Bounty Hunting", 
+      "Blind Server-Side Request Forgery", "Blind SQL Injection", "Bug Bounty Hunting",
       "Bypassing File Extension Filters", "Bypassing File Upload Restrictions", "Command Injection",
       "Cross-Site Request Forgery", "Cross-Site Scripting", "Data Exfiltration", "File Inclusion",
       "HTTP Verb Tampering", "IDOR", "Information Gathering", "JavaScript Deobfuscation",
@@ -25,10 +25,11 @@ const practicalAchievements = [
   {
     title: "Certified Penetration Testing Specialist (CPTS)",
     issuer: "HackTheBox",
-    date: "In Progress",
+    date: "2025",
     description: "Advanced penetration testing certification covering network and web application security with comprehensive methodology training.",
     skills: ["Network Security", "Web App Pentesting", "Post Exploitation", "Active Directory", "Reporting", "OSINT"],
-    isPending: true
+    isPending: false,
+    credlyUrl: "https://www.credly.com/badges/3ccac3ec-24f4-4d80-8920-f57fa9051ec1/public_url"
   },
   {
     title: "Certified AppSec Practitioner (CAP)",
